@@ -21,6 +21,7 @@
 		D6ED13E3192BD1FF002B76E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6ED13C5192BD1FF002B76E9 /* UIKit.framework */; };
 		D6ED13EB192BD1FF002B76E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6ED13E9192BD1FF002B76E9 /* InfoPlist.strings */; };
 		D6ED13ED192BD1FF002B76E9 /* MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6ED13EC192BD1FF002B76E9 /* MapKitTests.m */; };
+		D6ED13F7192BD231002B76E9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6ED13F6192BD231002B76E9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D6ED13E8192BD1FF002B76E9 /* MapKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapKitTests-Info.plist"; sourceTree = "<group>"; };
 		D6ED13EA192BD1FF002B76E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D6ED13EC192BD1FF002B76E9 /* MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapKitTests.m; sourceTree = "<group>"; };
+		D6ED13F6192BD231002B76E9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			files = (
 				D6ED13C4192BD1FF002B76E9 /* CoreGraphics.framework in Frameworks */,
 				D6ED13C6192BD1FF002B76E9 /* UIKit.framework in Frameworks */,
+				D6ED13F7192BD231002B76E9 /* MapKit.framework in Frameworks */,
 				D6ED13C2192BD1FF002B76E9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		D6ED13C0192BD1FF002B76E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6ED13F6192BD231002B76E9 /* MapKit.framework */,
 				D6ED13C1192BD1FF002B76E9 /* Foundation.framework */,
 				D6ED13C3192BD1FF002B76E9 /* CoreGraphics.framework */,
 				D6ED13C5192BD1FF002B76E9 /* UIKit.framework */,
@@ -199,6 +203,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Fairbanksdan;
 				TargetAttributes = {
+					D6ED13BD192BD1FF002B76E9 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					D6ED13DE192BD1FF002B76E9 = {
 						TestTargetID = D6ED13BD192BD1FF002B76E9;
 					};
